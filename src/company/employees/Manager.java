@@ -10,5 +10,6 @@ public class Manager extends Employee{
     public void displayInfo(){
         super.displayInfo();
         System.out.println("bonus: " + bonus);
+
     }
 }
