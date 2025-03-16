@@ -12,12 +12,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee () {
-    }
-
     public void displayInfo () {
-        System.out.println("Employee name: " + name);
-        System.out.println("Employee id: " + id);
-        System.out.println("Employee salary: " + salary);
+        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary);
     }
 }

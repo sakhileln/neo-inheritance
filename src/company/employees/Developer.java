@@ -5,16 +5,14 @@ public class Developer extends Employee  {
     String programmingLanguage;
 
     public Developer (String name, String id, int salary,String programmingLanguage) {
+        super(name, id, salary);
         this.programmingLanguage = programmingLanguage;
-        this.name = name;
-        this.id = id;
-        this.salary = salary;
     }
 
+    @Override
     public void displayInfo() {
-        System.out.println("Employee name: " + name);
-        System.out.println("Employee id: " + id);
-        System.out.println("Employee salary: " + salary);
-        System.out.println("Programming Language: " + programmingLanguage);
+
+        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary
+                + "\nProgramming Language: " + programmingLanguage);
     }
 }

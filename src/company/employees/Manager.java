@@ -4,17 +4,15 @@ package company.employees;
 public class Manager extends Employee {
     double bonus;
 
-    public Manager (String name, String id, int salary,double bonus) {
+    public Manager (String name, String id, int salary, double bonus) {
+        super(name, id, salary);
         this.bonus = bonus;
-        this.name = name;
-        this.id = id;
-        this.salary = salary;
     }
 
+    @Override
     public void displayInfo () {
-        System.out.println("Employee name: " + name);
-        System.out.println("Employee id: " + id);
-        System.out.println("Employee salary: " + salary);
-        System.out.println("Manager bonus: " + bonus);
+
+        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary +
+                "\nManager bonus: " + bonus);
     }
 }
