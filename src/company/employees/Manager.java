@@ -2,7 +2,7 @@
 package company.employees;
 
 public class Manager extends Employee {
-    double bonus;
+    protected double bonus;
 
     public Manager (String name, String id, int salary, double bonus) {
         super(name, id, salary);
@@ -12,7 +12,7 @@ public class Manager extends Employee {
     @Override
     public void displayInfo () {
 
-        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary +
-                "\nManager bonus: " + bonus);
+        System.out.println("Employee name: " + this.name + "\nEmployee id: " + this.id + "\nEmployee salary: " + this.salary +
+                "\nManager bonus: " + this.bonus);
     }
 }

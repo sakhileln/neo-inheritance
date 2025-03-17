@@ -2,9 +2,9 @@
 package company.employees;
 
 public class Employee {
-    String name;
-    String id;
-    int salary;
+    protected String name;
+    protected String id;
+    protected int salary;
 
     public Employee (String name, String id, int salary) {
         this.name = name;
@@ -13,6 +13,6 @@ public class Employee {
     }
 
     public void displayInfo () {
-        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary);
+        System.out.println("Employee name: " + this.name + "\nEmployee id: " + this.id + "\nEmployee salary: " + this.salary);
     }
 }

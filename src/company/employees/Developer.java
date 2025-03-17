@@ -2,7 +2,7 @@
 package company.employees;
 
 public class Developer extends Employee  {
-    String programmingLanguage;
+    protected String programmingLanguage;
 
     public Developer (String name, String id, int salary,String programmingLanguage) {
         super(name, id, salary);
@@ -12,7 +12,7 @@ public class Developer extends Employee  {
     @Override
     public void displayInfo() {
 
-        System.out.println("Employee name: " + name + "\nEmployee id: " + id + "\nEmployee salary: " + salary
-                + "\nProgramming Language: " + programmingLanguage);
+        System.out.println("Employee name: " + this.name + "\nEmployee id: " + this.id + "\nEmployee salary: " + this.salary
+                + "\nProgramming Language: " + this.programmingLanguage);
     }
 }
